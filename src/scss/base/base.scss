@@ -1,0 +1,35 @@
+
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+:root {
+  --text: #3F3D56;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #D5E4FD;
+  --accent: #2A7BE4;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+

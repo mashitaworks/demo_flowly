@@ -1,0 +1,170 @@
+/* reset + ベーススタイル */
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #223143;
+  --muted: #667085;
+  --accent: #6c5ce7;
+  --accent-2: #36a2ff;
+  --border: #e4e8f1;
+  --radius: 14px;
+  --shadow: 0 12px 34px rgba(34, 49, 67, 0.12);
+
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1160px, 92vw);
+  margin: 0 auto;
+}
+
+.app-header {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.app-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logo {
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 1.26rem;
+  letter-spacing: 0.03em;
+}
+
+nav a {
+  margin-left: 26px;
+  color: var(--muted);
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+.app-main {
+  padding: 48px 0 20px;
+}
+
+.hero {
+  background: linear-gradient(150deg, #fff, #eff4ff);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.13rem;
+  max-width: 720px;
+  margin: 0 auto 24px;
+}
+
+.hero-actions {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+
+.btn.secondary {
+  background: #f3f4ff;
+  color: var(--accent);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.features article {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: 0 8px 20px rgba(34, 49, 67, .05);
+}
+
+.features h2,
+.about h2,
+.cta h2 {
+  margin: 0 0 8px;
+}
+
+.features p,
+.about p,
+.cta p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.about,
+.cta {
+  background: white;
+  border-radius: var(--radius);
+  padding: 26px;
+  margin-bottom: 40px;
+  border: 1px solid var(--border);
+}
+
+.cta {
+  text-align: center;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 18px 0 28px;
+  color: var(--muted);
+}
+
+
+

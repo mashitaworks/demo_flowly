@@ -1,0 +1,52 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+
+  .button-primary {
+    width: 400px;
+    height: 60px;
+    padding-block: 12px;
+    font-size: fz(28);
+    box-shadow: 0px 6px 0px 0px #2a7be460;
+  }
+
+  .cta_text {
+    font-size: fz(18);
+    font-weight: bold;
+    position: relative;
+    span {
+      font-size: fz(20);
+      color: var(--accent);
+      padding-inline: 4px;
+    }
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 20px;
+      background: var(--accent);
+      display: block;
+      transform: rotate(-35deg) translateY(-40%);
+      position: absolute;
+      left: -10px;
+      top: 50%;
+    }
+    &::before {
+      content: "";
+      width: 1px;
+      height: 20px;
+      background: var(--accent);
+      display: block;
+      transform: rotate(35deg) translateY(-40%);
+      position: absolute;
+      right: -15px;
+      top: 50%;
+    }
+  }
+}

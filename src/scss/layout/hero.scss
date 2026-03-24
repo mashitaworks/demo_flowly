@@ -1,0 +1,55 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.hero {
+  padding-inline: 80px;
+}
+.hero_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 80px;
+  border-radius: 8px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    background: url(../../assets/hero_bg.png) center center /cover;
+  }
+}
+
+.hero_content,
+.hero_pic {
+  position: relative;
+  z-index: 2;
+}
+
+.hero_content {
+  padding: 100px 60px;
+}
+
+.hero_title {
+  width: 415px;
+  height: auto;
+  margin-bottom: -20px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.hero_subtitle {
+  font-size: fz(35);
+  margin-bottom: 25px;
+}
+
+.hero_text {
+  font-size: fz(16);
+}

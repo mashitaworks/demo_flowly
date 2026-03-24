@@ -1,0 +1,36 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.button-wrapper {
+  width: 232px;
+  @include mqsp {
+    width: 100%;
+    max-width: 232px;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  font-size: fz(14);
+  font-weight: 600;
+  text-decoration: none;
+  padding-inline: 14px;
+  padding-block: 4px;
+  border-radius: 80px;
+  transition: opacity .2s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.button-primary {
+    background: var(--accent);
+    color: #fff;
+  }
+  &.button-secondary {
+    color: var(--accent);
+    background: #fff;
+    border: 2px solid var(--accent);
+  }
+}
