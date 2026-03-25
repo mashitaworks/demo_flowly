@@ -14,6 +14,12 @@ export function Header() {
           <a href="#" className='button button-primary'><span>無料で始める</span></a>
         </div>
       </div>
+      <div className="btn_materials">
+        <ul className="btn_materials-inner">
+          <li></li>
+          <li><p></p></li>
+        </ul>
+      </div>
     </header>
   )
 }

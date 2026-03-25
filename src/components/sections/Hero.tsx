@@ -24,7 +24,7 @@ export function Hero() {
         <ul className="hero_inner">
           <li className="hero_content">
             <h1 className="hero_title">
-              <img src="src\assets\hero_title.svg" alt="成長を止めない" />
+              <img src="/hero_title.svg" alt="成長を止めない" />
             </h1>
             <h2 className="hero_subtitle">スタートアップのための<br/>業務効率化プラットフォーム</h2>
             <p className="hero_text">チームの情報共有からタスク管理、データ分析までを一元化</p>
@@ -36,10 +36,11 @@ export function Hero() {
             </div>
           </li>
           <li className="hero_pic">
-            <img src="src\assets\hero_img.svg" alt="Flowlyダッシュボード画面" />
+            <img src="/hero_img.svg" alt="Flowlyダッシュボード画面" />
           </li>
         </ul>
       </section>
+
       <section className="">
         <div className="slide_text">
           <p>すでに</p>
@@ -51,37 +52,37 @@ export function Hero() {
           <ul className="slider slider_01">
             <li className="slide">
               <img
-                src="src\assets\company_01.svg"
+                src="/company_01.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_02.svg"
+                src="/company_02.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_03.svg"
+                src="/company_03.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_04.svg"
+                src="/company_04.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_05.svg"
+                src="/company_05.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_06.svg"
+                src="/company_06.svg"
                 alt="企業ロゴ"
               />
             </li>
@@ -89,37 +90,37 @@ export function Hero() {
           <ul className="slider slider_02">
             <li className="slide">
               <img
-                src="src\assets\company_01.svg"
+                src="/company_01.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_02.svg"
+                src="/company_02.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_03.svg"
+                src="/company_03.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_04.svg"
+                src="/company_04.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_05.svg"
+                src="/company_05.svg"
                 alt="企業ロゴ"
               />
             </li>
             <li className="slide">
               <img
-                src="src\assets\company_06.svg"
+                src="/company_06.svg"
                 alt="企業ロゴ"
               />
             </li>
@@ -138,7 +139,7 @@ export function Hero() {
             <li className="about_inner about_period">
               <div className="about_header">
                 <div className="about_icon">
-                  <img src="src\assets\about_icon01.svg" alt="calendar" />
+                  <img src="/about_icon01.svg" alt="calendar" />
                 </div>
                 <h3 className="about_title">導入期間</h3>
               </div>
@@ -151,21 +152,21 @@ export function Hero() {
             <li className="about_inner about_security">
               <div className="about_header">
                 <div className="about_icon">
-                  <img src="src\assets\about_icon02.svg" alt="security" />
+                  <img src="/about_icon02.svg" alt="security" />
                 </div>
                 <h3 className="about_title">安全とセキュリティ</h3>
               </div>
               <div className="about_main">
                 <p>ISO27001準拠の<br/>セキュリティで安心</p>
                 <div className="about_main-pic">
-                  <img src="src\assets\about_img.svg" alt="ISOロゴ画像" />
+                  <img src="/about_img.svg" alt="ISOロゴ画像" />
                 </div>
               </div>
             </li>
             <li className="about_inner about_support">
               <div className="about_header">
                 <div className="about_icon">
-                  <img src="src\assets\about_icon03.svg" alt="support" />
+                  <img src="/about_icon03.svg" alt="support" />
                 </div>
                 <h3 className="about_title">サポート</h3>
               </div>
@@ -191,32 +192,32 @@ export function Hero() {
                   <ul className="label_list">
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon01.svg" alt="icon" />
+                        <img src="/work_icon01.svg" alt="icon" />
                       </div>
                       <p>時間短縮</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon02.svg" alt="icon" />
+                        <img src="/work_icon02.svg" alt="icon" />
                       </div>
                       <p>効率化</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon03.svg" alt="icon" />
+                        <img src="/work_icon03.svg" alt="icon" />
                       </div>
                       <p>リアルタイム把握</p>
                     </li>
                   </ul>
               </div>
               <div className="work_pic">
-                <img src="src\assets\work_img01.svg" alt="画像：自動レポーティング画面" />
+                <img src="/work_img01.svg" alt="画像：自動レポーティング画面" />
               </div>
             </li>
 
             <li className="work_inner">
               <div className="work_pic">
-                <img src="src\assets\work_img02.svg" alt="画像：チーム共有ボード画面" />
+                <img src="/work_img02.svg" alt="画像：チーム共有ボード画面" />
               </div>
               <div className="work_description">
                   <h3 className="work_description-title">チーム共有ボード</h3>
@@ -224,25 +225,25 @@ export function Hero() {
                   <ul className="label_list">
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon04.svg" alt="icon" />
+                        <img src="/work_icon04.svg" alt="icon" />
                       </div>
                       <p>チームワークの向上</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon05.svg" alt="icon" />
+                        <img src="/work_icon05.svg" alt="icon" />
                       </div>
                       <p>情報共有</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon06.svg" alt="icon" />
+                        <img src="/work_icon06.svg" alt="icon" />
                       </div>
                       <p>迅速化</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon07.svg" alt="icon" />
+                        <img src="/work_icon07.svg" alt="icon" />
                       </div>
                       <p>見える化</p>
                     </li>
@@ -257,26 +258,26 @@ export function Hero() {
                   <ul className="label_list">
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon08.svg" alt="icon" />
+                        <img src="/work_icon08.svg" alt="icon" />
                       </div>
                       <p>コスト削減</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon09.svg" alt="icon" />
+                        <img src="/work_icon09.svg" alt="icon" />
                       </div>
                       <p>ツール集約</p>
                     </li>
                     <li className="label_inner">
                       <div className="icon">
-                        <img src="src\assets\work_icon10.svg" alt="icon" />
+                        <img src="/work_icon10.svg" alt="icon" />
                       </div>
                       <p>シームレス連携</p>
                     </li>
                   </ul>
               </div>
               <div className="work_pic">
-                <img src="src\assets\work_img03.svg" alt="画像：インテグレーション連携の説明画像" />
+                <img src="/work_img03.svg" alt="画像：インテグレーション連携の説明画像" />
               </div>
             </li>
           </ul>
@@ -302,7 +303,7 @@ export function Hero() {
               </div>
               <p className="step_text">メールアドレスだけで即発行が可能です。</p>
               <div className="step_pic">
-                <img src="src\assets\step_img01.svg" alt="画像：無料アカウント登録の説明" />
+                <img src="/step_img01.svg" alt="画像：無料アカウント登録の説明" />
               </div>
             </li>
 
@@ -315,7 +316,7 @@ export function Hero() {
               </div>
               <p className="step_text">メンバーを招待してワークスペースを作成</p>
               <div className="step_pic secondary">
-                <img src="src\assets\step_img02.svg" alt="画像：チーム設定の説明" />
+                <img src="/step_img02.svg" alt="画像：チーム設定の説明" />
               </div>
             </li>
 
@@ -328,7 +329,7 @@ export function Hero() {
               </div>
               <p className="step_text">すぐにプロジェクトを稼働！</p>
               <div className="step_pic last">
-                <img src="src\assets\step_img03.svg" alt="画像：利用開始の説明" />
+                <img src="/step_img03.svg" alt="画像：利用開始の説明" />
               </div>
             </li>
           </ul>
@@ -350,7 +351,7 @@ export function Hero() {
               </div>
             </li>
             <div className="cta_pic">
-              <img src="src\assets\cta_img.svg" alt="画像:サービス利用のイメージ画像" />
+              <img src="/cta_img.svg" alt="画像:サービス利用のイメージ画像" />
             </div>
           </ul>
         </div>

@@ -11,8 +11,33 @@
   align-items: center;
   justify-content: center;
   column-gap: 80px;
-  border-radius: 8px;
+  border-radius: 4px;
+  background-image: linear-gradient(124deg, #edfcff, #d5e4fd 45%);
   position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgb(255, 255, 255) 1px, transparent 1px);
+    background-size: 20px 20px;
+    content: "";
+    animation: dotWaveX 3s linear infinite;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgb(255, 255, 255) 1px, transparent 1px);
+    background-size: 60px 60px;
+    content: "";
+    animation: dotWaveY 3s linear infinite;
+  }
 
   @include mqsp(xl) {
     column-gap: 20px;
@@ -21,19 +46,24 @@
     padding-block: 40px;
     flex-direction: column;
   }
+}
 
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    display: block;
-    background: url(../../assets/hero_bg.png) center center /cover;
-    @include mqsp(lg) {
-      height: 100vh;
-    }
+
+@keyframes dotWaveX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@keyframes dotWaveY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
   }
 }
 
@@ -64,6 +94,7 @@
     padding: 10px 0px;
   }
 }
+
 
 .hero_title {
   width: 415px;
@@ -125,3 +156,4 @@
     order: 1;
   }
 }
+
