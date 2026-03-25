@@ -8,6 +8,7 @@
 
   @include mqsp {
     padding-top: 60px;
+    margin-bottom: 60px;
     padding-inline: clamp(20px, 5vw, 80px);
   }
 }

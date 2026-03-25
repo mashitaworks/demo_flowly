@@ -6,7 +6,7 @@ export function Header() {
       <div className="header_inner">
         <h1>
           <a className="header_logo" href="#top">
-            <img src="src\assets\logo.svg" alt="flowlyサービスロゴ画像" />
+            <img src="/logo.svg" alt="flowlyサービスロゴ画像" />
           </a>
         </h1>
         <div className="header_inner-btn">
@@ -15,10 +15,10 @@ export function Header() {
         </div>
       </div>
       <div className="btn_materials">
-        <ul className="btn_materials-inner">
-          <li></li>
-          <li><p></p></li>
-        </ul>
+        <a href="#" className="btn_materials-inner">
+          <div><img src="/materials.svg" alt="flowlyサービスロゴ画像" /></div>
+          <p>資料ダウンロード</p>
+        </a>
       </div>
     </header>
   )
