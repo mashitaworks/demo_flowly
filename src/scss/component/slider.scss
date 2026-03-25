@@ -1,0 +1,75 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.slide_text {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-size: fz(35);
+  font-weight: 600;
+
+  @include mqsp {
+    flex-wrap: wrap;
+    font-size: fz(20);
+  }
+  .point_number{
+    margin-left: 12px;
+    font-size: fz(80);
+    color: var(--accent);
+    text-shadow: 0px 4px 0px rgba(42, 123, 228, 0.6);
+    @include mqsp {
+      font-size: fz(60);
+      margin-left: 8px;
+    }
+  }
+  .point_text {
+    color: var(--accent);
+    font-size: fz(30);
+    font-weight: 800;
+    margin-right: 12px;
+    @include mqsp {
+      font-size: fz(25);
+    }
+  }
+}
+
+/* スライダー全体 */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  @include mqsp {
+    margin-bottom: 24px;
+  }
+}
+.slider {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+.slider .slide {
+  flex: 0 0 auto;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+}
+
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

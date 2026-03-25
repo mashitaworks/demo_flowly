@@ -5,12 +5,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-inline: 80px;
+  padding-inline: clamp(20px, 5vw, 80px);
   padding-block: 18px;
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
+
 }
 .header_inner  {
   width: 100%;
@@ -19,11 +20,15 @@
   justify-content: space-between;
 }
 .header_logo {
+  display: inline-block;
   width: 160px;
   img {
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+  @include mqsp {
+    width: 100px;
   }
 }
 .header_inner-btn {
@@ -31,4 +36,7 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 12px;
+  @include mqsp {
+    column-gap: 4px;
+  }
 }

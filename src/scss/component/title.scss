@@ -1,0 +1,30 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.section_header {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  font-weight: bold;
+  @include mqsp {
+    margin-bottom: 25px;
+  }
+  .section_title-point {
+    color: var(--accent);
+    font-size: fz(22);
+    letter-spacing: 0.04rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+    @include mqsp {
+      font-size: fz(18);
+    }
+  }
+  .section_title {
+    font-size: fz(35);
+    font-weight: normal;
+    @include mqsp {
+      font-size: fz(25);
+    }
+  }
+}

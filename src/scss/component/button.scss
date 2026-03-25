@@ -20,17 +20,26 @@
   padding-inline: 14px;
   padding-block: 4px;
   border-radius: 80px;
-  transition: opacity .2s ease;
-  &:hover {
-    opacity: 0.8;
+  transition: .2s ease;
+  @include mqsp {
+    font-size: fz(12);
+    padding-inline: 8px;
+    padding-block: 8px;
   }
   &.button-primary {
     background: var(--accent);
     color: #fff;
+    border: 2px solid var(--accent);
+    &:hover {
+      opacity: 0.8;
+    }
   }
   &.button-secondary {
     color: var(--accent);
     background: #fff;
     border: 2px solid var(--accent);
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

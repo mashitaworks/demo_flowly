@@ -1,0 +1,16 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.read-text {
+  font-size: fz(22);
+  text-align: center;
+  line-height: 1.6;
+
+  @include mqsp {
+    font-size: fz(17);
+    letter-spacing: 0.02rem;
+    br {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.about_content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 56px;
+
+  @include mqsp {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 40px;
+  }
+}
+
+.about_inner {
+  padding-inline: 24px;
+  padding-block: 30px;
+  width: calc(100% / 3);
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px -5px #7777772f;
+
+  @include mqsp {
+    width: 100%;
+  }
+}
+
+.about_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  color: var(--accent);
+  margin-bottom: 30px;
+
+  @include mqsp {
+    margin-bottom: 20px;
+  }
+}
+.about_icon {
+  width: 40px;
+  @include mqsp {
+    width: 35px;
+  }
+}
+.about_main {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: var(--accent);
+
+  @include mqsp(lg) {
+    br {
+      display: none;
+    }
+  }
+
+}
+
+.about_period {
+  .about_main p {
+    font-size: fz(40);
+    margin-right: 16px;
+
+    @include mqsp(lg) {
+      font-size: fz(35);
+    }
+  }
+
+  .about_main span.point {
+    font-size: fz(80);
+    line-height: .5;
+    font-weight: bold;
+    font-family: var(--robot);
+
+    @include mqsp(lg) {
+      font-size: fz(70);
+    }
+  }
+  .about_main span.unit {
+    font-size: fz(40);
+    font-weight: bold;
+    font-family: var(--robot);
+
+    @include mqsp(lg) {
+      font-size: fz(35);
+    }
+  }
+}
+
+.about_security {
+  .about_main {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: fz(16);
+    @include mqsp(lg) {
+      flex-direction: column;
+      row-gap:8px;
+    }
+    @include mqsp {
+      font-size: fz(14);
+      column-gap: 10px;
+    }
+  }
+
+  .about_main-pic {
+    @include mqsp {
+      width: 120px;
+    }
+  }
+}
+
+.about_support {
+  .about_main { 
+    font-size: fz(20);
+    text-align: center;
+
+    @include mqsp {
+      font-size: fz(18);
+      line-height: 1.8;
+    }
+  }
+}

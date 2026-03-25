@@ -1,0 +1,64 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.step_content {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 60px;
+  column-gap: 40px;
+
+      
+  @include mqsp {
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 40px;
+  }
+}
+
+.step_inner {
+  width: calc(100%/3);
+  border-radius: 6px;
+  border: 4px solid var(--accent);
+  background: #D5E4FD;
+  padding: 50px 30px;
+        
+  @include mqsp {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--accent);
+  }
+}
+
+.step_header {
+  color: var(--accent);
+  display: flex;
+  align-items: baseline;
+  column-gap: 12px;
+  margin-bottom: 20px;
+
+  .step_header-text {
+    font-size: fz(25);
+    font-weight: bold;
+  }
+  .step_header-title {
+    font-size: fz(20);
+    @include mqsp {
+      font-size: fz(18);
+    }
+  }
+}
+
+.step_text {
+  font-size: fz(16);
+  letter-spacing: -0.04rem;
+  margin-bottom: 30px;
+}
+.step_pic {
+  width: 140px;
+  margin-inline: auto;
+}
+.step_pic.secondary,
+.step_pic.last {
+  width: 160px;
+}

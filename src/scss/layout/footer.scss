@@ -1,0 +1,98 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.footer {
+  width: 100%;
+  padding: 80px 80px 20px;
+  background: #fff;
+
+  @include mqsp {
+    padding-top: 60px;
+    padding-inline: clamp(20px, 5vw, 80px);
+  }
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+
+  @include mqsp {
+    flex-direction: column;
+  }
+}
+
+.footer_inner-header {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-bottom: 40px;
+
+  @include mqsp {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: fz(16);
+    @include mqsp {
+      font-size: fz(14);
+      margin-top: 12px;
+    }
+  }
+}
+
+.footer_inner-text {
+  @include mqsp {
+    font-size: fz(16);
+    letter-spacing: 0.02rem;
+    margin-bottom: 40px;
+  }
+}
+
+dl.footer_inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  max-width: 450px;
+  
+  @include mqsp {
+    width: 100%;
+  }
+}
+dt {
+  width: 20%;
+  font-size: fz(16);
+  font-weight: 500;
+  padding-bottom: 15px;
+    
+  @include mqsp {
+    font-size: fz(14);
+    padding-bottom: 4px;
+  }
+}
+
+dd {
+  width: 80%;
+  font-size: fz(15);
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 15px;
+
+  @include mqsp {
+    font-size: fz(13);
+    padding-bottom: 4px;
+  }
+}
+
+.footer_small {
+  font-size: fz(12);
+  margin-top: 60px;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  
+  @include mqsp {
+    font-size: fz(10);
+    margin-top: 40px;
+  }
+}

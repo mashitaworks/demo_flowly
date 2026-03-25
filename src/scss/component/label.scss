@@ -1,0 +1,37 @@
+@use "../imports/mixins" as *;
+@use "../imports/variables" as *;
+
+.label_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.label_inner {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding-block: 2px;
+  padding-inline: 12px;
+  background: #DA6A03;
+  border-radius: 50px;
+    
+  @include mqsp {
+    padding-inline: 8px;
+  }
+  .icon {
+    width: 24px;
+    @include mqsp {
+      width: 18px;
+    }
+  }
+  p {
+    font-weight: 600;
+    color: #fff;
+    font-size: fz(16);
+    
+    @include mqsp {
+      font-size: fz(14);
+    }
+  }
+}

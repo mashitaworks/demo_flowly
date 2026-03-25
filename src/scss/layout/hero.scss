@@ -2,15 +2,25 @@
 @use "../imports/variables" as *;
 
 .hero {
-  padding-inline: 80px;
+  padding-inline: clamp(20px, 5vw, 80px);
 }
 .hero_inner {
+  width: 100%;
+  margin-inline: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 80px;
   border-radius: 8px;
   position: relative;
+
+  @include mqsp(xl) {
+    column-gap: 20px;
+  }
+  @include mqsp(lg) {
+    padding-block: 40px;
+    flex-direction: column;
+  }
 
   &::after {
     content: "";
@@ -21,6 +31,9 @@
     z-index: 0;
     display: block;
     background: url(../../assets/hero_bg.png) center center /cover;
+    @include mqsp(lg) {
+      height: 100vh;
+    }
   }
 }
 
@@ -31,25 +44,84 @@
 }
 
 .hero_content {
-  padding: 100px 60px;
+  padding: 100px 0px;
+  .cta {
+    width: fit-content;
+    @include mqsp(lg) {
+      width: 90%;
+      margin-inline: auto;
+    }
+  }
+
+  @include mqsp(xl) {
+    padding-inline: 20px;
+  }
+  @include mqsp(lg) {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
 }
 
 .hero_title {
   width: 415px;
   height: auto;
-  margin-bottom: -20px;
+  margin-left: -30px;
   img {
     width: 100%;
     height: auto;
     object-fit: contain;
   }
+
+  @include mqsp(xl) {
+    width: 350px;
+    margin-left: 0;
+  }
+  @include mqsp(lg) {
+    width: 260px;
+    margin-left: -20px;
+  }
 }
 
 .hero_subtitle {
   font-size: fz(35);
-  margin-bottom: 25px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+
+  @include mqsp(xl) {
+    font-size: fz(25);
+  }
+  @include mqsp(lg) {
+    font-size: fz(18);
+  }
 }
 
 .hero_text {
   font-size: fz(16);
+  margin-bottom: 25px;
+  @include mqsp(lg) {
+    font-size: fz(14);
+    width: 70%;
+  }
+}
+
+.hero_pic {
+  width: 40%;
+  margin-top: 50px;
+  @include mqsp(xl) {
+    margin-top: 0;
+    min-width: 350px;
+    margin-right: 20px;
+  }
+  @include mqsp(lg) {
+    width: 95%;
+    min-width: auto;
+    max-width: 350px;
+    height: auto;
+    margin-inline: auto;
+    margin-top: 0px;
+    order: 1;
+  }
 }
